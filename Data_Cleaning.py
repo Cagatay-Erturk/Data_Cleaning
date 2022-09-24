@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("C:\python_projects\data_cleaning\BL-Flickr-Images-Book.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/realpython/python-data-cleaning/master/Datasets/BL-Flickr-Images-Book.csv")
 to_drop = ["Edition Statement", "Corporate Author", "Corporate Contributors",
            "Former owner", "Engraver", "Contributors", "Issuance type", "Shelfmarks"]
 df.drop(to_drop, inplace= True, axis=1)
